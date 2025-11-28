@@ -51,4 +51,4 @@ result = requests.get(url=url, params=params).json()['fare']
 
 if st.button('Predict'):
     st.write('Congrats 🎉, you \'ve successfully predicted your fare')
-    st.write(f'Your fare wil be ...{result}')
+    st.write(f'Your fare wil be ...{result:2d}')
