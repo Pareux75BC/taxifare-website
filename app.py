@@ -49,5 +49,6 @@ result = requests.get(url=url, params=params).json()['fare']
 
 # Let's retrieve the prediction from the **JSON** returned by the API...
 
-# Finally, we can display the prediction to the user
-st.write(f'Your fare wil be ...{result}')
+if st.button('Predict'):
+    st.write('Congrats 🎉, you \'ve successfully predicted your fare')
+    st.write(f'Your fare wil be ...{result}')
